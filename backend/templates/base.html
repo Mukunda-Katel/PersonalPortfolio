@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        {% include 'home/navbar.html' %}
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h4>Mukunda Jamar Katel</h4>
+                    <p>Full-Stack Developer | Flutter Expert | Cybersecurity Enthusiast</p>
+                </div>
+                <div class="col-6 text-right">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mukunda-kattel-402119324/" target="_blank" class="social-media-links"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Mukunda-Katel" target="_blank" class="social-media-links"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/its_me_mukunda__/" target="_blank" class="social-media-links"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:mukundakatel@gmail.com" target="_blank" class="text-light"><i class="far fa-envelope"></i></a>
+                    </div>
+                    <div class="mt-2">
+                        <p>&copy; {% now "Y" %} Mukunda Jamar Katel. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.162.0/three.min.js"></script>
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="/static/js/main.js"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html> 

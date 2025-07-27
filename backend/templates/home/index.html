@@ -1,0 +1,929 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="hero" class="hero-split">
+    <div class="particle-background" id="particles-js"></div>
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-6 hero-content-left">
+                <div class="hero-content-wrapper">
+                    <div class="hero-tag">Full-Stack Developer & Cybersecurity Expert</div>
+                    <h1 class="hero-title" data-aos="fade-up">Mukunda Jamar <span class="highlight">Katel</span></h1>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="200">I create <span class="typed-text" data-typed-items="responsive web applications, mobile applications, backend development, malware "></span></p>
+                    <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#projects" class="btn btn-primary btn-lg me-3">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+                    </div>
+                    <div class="hero-socials" data-aos="fade-up" data-aos-delay="600">
+                        <a href="https://github.com/Mukunda-Katel" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mukunda-kattel-402119324/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/its_me_mukunda__/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:mukundakatel@gmail.com" target="_blank" class="social-icon"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 hero-content-right">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="code-title">main.py</div>
+                    </div>
+                    <div class="code-editor">
+                        <pre><code class="language-python">class Developer:
+    def __init__(self):
+        self.name = "Mukunda Jamar Katel"
+        self.role = "Full-Stack Developer"
+        self.languages = ["Python", "JavaScript", "Dart"]
+        self.frameworks = ["Django", "Flutter", "React"]
+        self.interests = ["Cybersecurity", "UI/UX Design", 
+                         "Mobile Development"]
+                    
+    def say_hello(self):
+        return "Welcome to my portfolio!"
+        
+    def get_skills(self):
+        return {
+            "frontend": ["HTML5", "CSS3", "JavaScript", "React"],
+            "backend": ["Python", "Django", "Firebase", "SQL"],
+            "mobile": ["Flutter", "Dart"],
+            "cybersecurity": ["Penetration Testing", "Vulnerability Assessment"]
+        }
+
+# Initialize developer
+dev = Developer()
+print(dev.say_hello())</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-lg-8 text-center">
+                <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">About Me</h2>
+                <div class="divider-custom mx-auto mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <p class="lead" data-aos="fade-up" data-aos-delay="400">I'm a passionate Full-Stack Developer with expertise in both web and mobile development. With a strong background in Flutter, Django, and cybersecurity, I create solutions that are not only functional but also secure and user-friendly.</p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                <div class="text-center" data-aos="zoom-in">
+                    <!-- <img src="/" alt="Mukunda Jamar Katel" class="img-fluid rounded-circle float" style="max-width: 300px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);"> -->
+                </div>
+            </div>
+            <div class="col-12 col-lg-8">
+                <div data-aos="fade-left">
+                    <p>I've been working as a developer for several years, specializing in creating responsive and interactive web applications and mobile solutions. My approach combines technical excellence with an eye for design and user experience.</p>
+                    
+                    <p>My technical skills include:</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2" data-aos="fade-left" data-aos-delay="200"><i class="fas fa-check-circle text-primary me-2"></i> Front-end Development with HTML, CSS, JavaScript, and React</li>
+                        <li class="mb-2" data-aos="fade-left" data-aos-delay="300"><i class="fas fa-check-circle text-primary me-2"></i> Mobile Application Development with Flutter and Dart</li>
+                        <li class="mb-2" data-aos="fade-left" data-aos-delay="400"><i class="fas fa-check-circle text-primary me-2"></i> Back-end Development with Django and Firebase</li>
+                        <li class="mb-2" data-aos="fade-left" data-aos-delay="500"><i class="fas fa-check-circle text-primary me-2"></i> Database Design and Management with MySQL, SQLite, PostgreSQL</li>
+                        <li class="mb-2" data-aos="fade-left" data-aos-delay="600"><i class="fas fa-check-circle text-primary me-2"></i> Cybersecurity tools such as Metasploit, Burp Suite, Nmap, Ngrok, and Secure Coding Practices</li>
+                    </ul>
+                    
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="700">
+                        <a href="/static/Mukunda Jamar Katel CV.pdf" target="_blank" class="btn btn-primary me-3">
+                            <i class="fas fa-download me-2"></i> Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline-dark">
+                            <i class="fas fa-envelope me-2"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-lg-8 text-center">
+                <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">My Skills</h2>
+                <div class="divider-custom mx-auto mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-code"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <p class="lead" data-aos="fade-up" data-aos-delay="400">Here are the technologies and tools I'm proficient with. I'm constantly learning and expanding my skillset to keep up with the latest industry trends.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4" data-aos="flip-left" data-aos-delay="100">
+                <div class="skill-card text-center h-100">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Flutter, Dart, Django, Firebase, State Management</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4" data-aos="flip-left" data-aos-delay="300">
+                <div class="skill-card text-center h-100">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>HTML5, CSS3, JavaScript, Django,PHP </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4" data-aos="flip-left" data-aos-delay="500">
+                <div class="skill-card text-center h-100">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Python, Django, Django REST Framework,Firebase, SQL</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
+                <div class="skill-card text-center h-100">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Security Best Practices, Vulnerability Assessment, Secure Coding</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4" data-aos="flip-left" data-aos-delay="400">
+                <div class="skill-card text-center h-100">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <p>SQLite, PostgreSQL, MySQL, MongoDB, Firebase Firestore</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4" data-aos="flip-left" data-aos-delay="600">
+                <div class="skill-card text-center h-100">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Others</h3>
+                    <p>Git, GitHub, Metasploit, Burp Suite, Nmap, Ngrok, Figma, Adobe XD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5 projects-timeline-section">
+    <div class="container">
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 col-lg-8 text-center">
+                <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">My Projects</h2>
+                <div class="divider-custom mx-auto mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <p class="lead mb-4" data-aos="fade-up" data-aos-delay="400">Key projects from my development journey</p>
+            </div>
+        </div>
+        
+        <div class="project-timeline compact">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="project-tag">Mobile Development</div>
+                        <h3>OurGarage App</h3>
+                    </div>
+                    <div class="timeline-body">
+                        <p>A Flutter mobile application with Django backend for vehicle maintenance tracking</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Flutter</span>
+                            <span class="tech-badge">Django</span>
+                            <span class="tech-badge">SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="#" class="btn btn-sm btn-primary">Demo</a> -->
+                            <a href="https://github.com/Mukunda-Katel/Our_Garage" target="_blank" class="btn btn-sm btn-outline-light">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <!-- <div class="timeline-date">2022</div> -->
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="project-tag">Web Development</div>
+                        <h3>Portfolio Website</h3>
+                    </div>
+                    <div class="timeline-body">
+                        <p>A responsive portfolio with interactive elements and terminal-inspired interface</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">html</span>
+                            <span class="tech-badge">css</span>
+                            
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Django</span>
+
+                            <span class="tech-badge">SQLite</span>
+                            <!-- <span class="tech-badge">Bootstrap</span> -->
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-primary">Live Site</a>
+                            <a href="#" class="btn btn-sm btn-outline-light">
+                                <!-- <i class="fab fa-github"></i> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="timeline-dot"></div>
+                <!-- <div class="timeline-date">2021</div> -->
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="project-tag">App development</div>
+                        <h3>Tic Tac Toe</h3>
+                    </div>
+                    <div class="timeline-body">
+                        <p>This is a simple Tic Tac Toe game built with python.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                          
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="#" class="btn btn-sm btn-primary">Case Study</a> -->
+                            <a href="https://github.com/Mukunda-Katel/tic-tac-toe" target="_blank" class="btn btn-sm btn-outline-light">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="timeline-dot"></div>
+                <!-- <div class="timeline-date">2021</div> -->
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="project-tag">App development</div>
+                        <h3>Furniture Management System</h3>
+                    </div>
+                    <div class="timeline-body">
+                        <p>This is a furniture management system built with python.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                          
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="#" class="btn btn-sm btn-primary">Case Study</a> -->
+                            <a href="https://github.com/Mukunda-Katel/Furniture-Management-System" target="_blank" class="btn btn-sm btn-outline-light">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="timeline-dot"></div>
+                <!-- <div class="timeline-date">2021</div> -->
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="project-tag">App development</div>
+                        <h3>Contact Book App</h3>
+                    </div>
+                    <div class="timeline-body">
+                        <p>This is a contact book app built with JDBC</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Java</span>
+                          
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="#" class="btn btn-sm btn-primary">Case Study</a> -->
+                            <a href="https://github.com/Mukunda-Katel/ContactBook" target="_blank" class="btn btn-sm btn-outline-light">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Timeline End -->
+            <div class="timeline-end" data-aos="fade-up" data-aos-delay="500">
+                <div class="timeline-dot"></div>
+                <a href="https://github.com/Mukunda-Katel" target="_blank" class="btn btn-outline-light btn-sm">
+                    <i class="fab fa-github me-2"></i>View More on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-dark">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-lg-8 text-center">
+                <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Terminal_Access</h2>
+                <div class="divider-custom mx-auto mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-terminal"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <p class="lead" data-aos="fade-up" data-aos-delay="400">Leave a message on my secure server. Authentication not required for guest access.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8" data-aos="fade-up" data-aos-delay="200">
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-button terminal-close"></span>
+                            <span class="terminal-button terminal-minimize"></span>
+                            <span class="terminal-button terminal-maximize"></span>
+                        </div>
+                        <div class="terminal-title">guest@mukunda:~/messages</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-output" id="terminalOutput">
+                            <div class="terminal-line">Welcome to Mukunda's secure server [Version 1.0.1]</div>
+                            <div class="terminal-line">(c) 2025 Mukunda Jamar Katel. All rights reserved.</div>
+                            <div class="terminal-line">--------------------------------------------------</div>
+                            <div class="terminal-line">Establishing secure connection...</div>
+                            <div class="terminal-line terminal-success">Connection established!</div>
+                            <div class="terminal-line">Type your message below and hit send to transmit.</div>
+                            <div class="terminal-line">--------------------------------------------------</div>
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <div class="terminal-line terminal-success">> {{ message }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <form method="POST" action="{% url 'home:home' %}" id="terminalForm" class="terminal-form">
+                            {% csrf_token %}
+                            <div class="terminal-input-group">
+                                <span class="terminal-prompt">guest@mukunda:~$</span>
+                                {{ form.name }}
+                                {% if form.name.errors %}
+                                    <div class="terminal-error">{{ form.name.errors }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="terminal-input-group">
+                                <span class="terminal-prompt">email:</span>
+                                {{ form.email }}
+                                {% if form.email.errors %}
+                                    <div class="terminal-error">{{ form.email.errors }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="terminal-input-group">
+                                <span class="terminal-prompt">subject:</span>
+                                {{ form.subject }}
+                                {% if form.subject.errors %}
+                                    <div class="terminal-error">{{ form.subject.errors }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="terminal-input-group terminal-message-group">
+                                <span class="terminal-prompt">message:</span>
+                                {{ form.message }}
+                                {% if form.message.errors %}
+                                    <div class="terminal-error">{{ form.message.errors }}</div>
+                                {% endif %}
+                            </div>
+                            <div class="terminal-input-group">
+                                <button type="submit" class="terminal-button-send">TRANSMIT MESSAGE</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    /* Hero section styles for split layout */
+    .hero-split {
+        min-height: 100vh;
+        background-color: var(--dark-color);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .particle-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    
+    .hero-content-left {
+        position: relative;
+        z-index: 2;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 3rem;
+        background-color: var(--darker-color);
+    }
+    
+    .hero-content-right {
+        position: relative;
+        z-index: 2;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+    }
+    
+    .hero-content-wrapper {
+        max-width: 600px;
+    }
+    
+    .hero-tag {
+        display: inline-block;
+        background-color: rgba(0, 255, 65, 0.1);
+        color: var(--primary-color);
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-family: var(--font-family);
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        border-left: 3px solid var(--primary-color);
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--white);
+        line-height: 1.2;
+    }
+    
+    .hero-title .highlight {
+        color: var(--primary-color);
+        position: relative;
+    }
+    
+    .hero-description {
+        font-size: 1.5rem;
+        color: var(--gray-300);
+        margin-bottom: 2rem;
+        line-height: 1.6;
+    }
+    
+    .typed-text {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+    }
+    
+    .hero-cta {
+        margin-bottom: 2rem;
+    }
+    
+    .hero-socials {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.05);
+        color: var(--gray-300);
+        transition: all 0.3s;
+    }
+    
+    .social-icon:hover {
+        background-color: var(--primary-color);
+        color: var(--black);
+        transform: translateY(-3px);
+    }
+    
+    /* Code window styling */
+    .code-window {
+        width: 100%;
+        max-width: 500px;
+        background-color: var(--darker-color);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .code-header {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 0.75rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .code-dots {
+        display: flex;
+        gap: 6px;
+    }
+    
+    .code-dots span {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+    
+    .code-dots span:nth-child(1) {
+        background-color: #ff5f56;
+    }
+    
+    .code-dots span:nth-child(2) {
+        background-color: #ffbd2e;
+    }
+    
+    .code-dots span:nth-child(3) {
+        background-color: #27c93f;
+    }
+    
+    .code-title {
+        font-family: var(--font-family);
+        color: var(--gray-400);
+        font-size: 0.85rem;
+    }
+    
+    .code-editor {
+        padding: 1rem;
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+    
+    .code-editor pre {
+        margin: 0;
+        font-family: var(--font-family);
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: var(--gray-300);
+    }
+    
+    /* Media Queries for hero section */
+    @media (max-width: 992px) {
+        .hero-content-left, 
+        .hero-content-right {
+            min-height: auto;
+            padding: 5rem 2rem;
+        }
+        
+        .hero-title {
+            font-size: 2.5rem;
+        }
+        
+        .hero-description {
+            font-size: 1.25rem;
+        }
+        
+        .code-window {
+            margin-top: 3rem;
+        }
+    }
+    
+    /* Timeline Projects Section */
+    .projects-timeline-section {
+        position: relative;
+        background-color: var(--darker-color);
+        color: var(--gray-300);
+    }
+    
+    .project-timeline {
+        position: relative;
+        padding: 1rem 0;
+    }
+    
+    .project-timeline:before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: var(--primary-color);
+        top: 0;
+        bottom: 0;
+        left: 30px;
+        opacity: 0.3;
+    }
+    
+    .timeline-item {
+        position: relative;
+        margin-bottom: 2.5rem;
+        padding-left: 60px;
+    }
+    
+    .timeline-dot {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        left: 23px;
+        top: 15px;
+        z-index: 1;
+        box-shadow: 0 0 0 4px rgba(0, 255, 65, 0.1);
+    }
+    
+    .timeline-date {
+        position: absolute;
+        top: 12px;
+        left: 55px;
+        background-color: var(--primary-color);
+        color: var(--black);
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-weight: 700;
+        font-size: 0.75rem;
+        font-family: var(--font-family);
+    }
+    
+    .timeline-content {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        margin-top: 2rem;
+        border-left: 3px solid var(--primary-color);
+        transition: all 0.3s ease;
+    }
+    
+    .timeline-content:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+    
+    .timeline-header {
+        margin-bottom: 1rem;
+    }
+    
+    .timeline-header h3 {
+        margin-bottom: 0;
+        color: var(--white);
+        font-size: 1.25rem;
+    }
+    
+    .project-tag {
+        display: inline-block;
+        background-color: rgba(0, 255, 65, 0.1);
+        color: var(--primary-color);
+        padding: 0.3rem 0.6rem;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+    
+    .timeline-body p {
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+        color: var(--gray-400);
+    }
+    
+    .tech-stack {
+        margin: 0.75rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+    }
+    
+    .tech-badge {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: var(--gray-300);
+        padding: 0.2rem 0.5rem;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        font-weight: 500;
+        display: inline-block;
+    }
+    
+    .project-links {
+        margin-top: 1rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+    
+    .project-links .btn-outline-light {
+        border-color: rgba(255, 255, 255, 0.2);
+        padding: 0.35rem 0.7rem;
+    }
+    
+    .timeline-end {
+        text-align: center;
+        position: relative;
+        margin-top: 1.5rem;
+        padding-left: 60px;
+    }
+    
+    /* Responsive timeline */
+    @media (max-width: 767px) {
+        .timeline-content {
+            padding: 1.25rem;
+        }
+        
+        .timeline-header h3 {
+            font-size: 1.1rem;
+        }
+    }
+    
+    /* Original styling */
+    .divider-custom {
+        margin: 1.25rem 0 1.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .divider-custom .divider-custom-line {
+        width: 100%;
+        max-width: 7rem;
+        height: 0.25rem;
+        background-color: var(--primary-color);
+        border-radius: 1rem;
+        border-color: var(--primary-color);
+    }
+    
+    .divider-custom .divider-custom-line:first-child {
+        margin-right: 1rem;
+    }
+    
+    .divider-custom .divider-custom-line:last-child {
+        margin-left: 1rem;
+    }
+    
+    .divider-custom .divider-custom-icon {
+        color: var(--primary-color);
+        font-size: 1.5rem;
+    }
+    
+    /* Custom rounded image style */
+    .rounded-circle {
+        border-radius: 50%;
+    }
+    
+    /* Fluid image style */
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize Typed.js
+        if (document.querySelector('.typed-text')) {
+            let typed_strings = document.querySelector('.typed-text').getAttribute('data-typed-items');
+            typed_strings = typed_strings.split(', ');
+            
+            new Typed('.typed-text', {
+                strings: typed_strings,
+                loop: true,
+                typeSpeed: 100,
+                backSpeed: 50,
+                backDelay: 2000
+            });
+        }
+        
+        // Initialize particlesJS
+        if (document.getElementById('particles-js')) {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 50,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#00ff41"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": true,
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#00ff41",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        }
+        
+        // Project filtering
+        const filterButtons = document.querySelectorAll('.project-filters button');
+        const projectItems = document.querySelectorAll('.project-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Get filter value
+                const filterValue = this.getAttribute('data-filter');
+                
+                // Filter projects
+                projectItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                        }, 50);
+                    } else {
+                        item.style.opacity = '0';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    });
+</script>
+{% endblock %} 

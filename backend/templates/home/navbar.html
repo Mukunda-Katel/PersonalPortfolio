@@ -1,0 +1,52 @@
+<nav class="navbar navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <span class="text-primary">Mukunda</span> Jamar Katel
+        </a>
+        <!-- <button class="navbar-toggler" id="navbar-toggler">
+            <i class="fas fa-bars"></i> -->
+        </button>
+        <ul class="navbar-nav" id="navbar-nav">
+            <button class="navbar-toggler" id="navbar-toggler">
+                <i class="fas fa-bars"></i>
+            </button>
+            <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            <!-- </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a> -->
+            <!-- </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary" href="/static/Mukunda Jamar Katel CV.pdf" target="_blank">
+                    <i class="fas fa-download me-1"></i> CV
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarToggler = document.getElementById('navbar-toggler');
+        const navbarNav = document.getElementById('navbar-nav');
+        
+        navbarToggler.addEventListener('click', function() {
+            navbarNav.classList.toggle('show');
+        });
+    });
+</script> 
