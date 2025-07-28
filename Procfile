@@ -1,1 +1,1 @@
-web: cd portfolio && gunicorn --chdir ../ run:main
+web: gunicorn run:app
