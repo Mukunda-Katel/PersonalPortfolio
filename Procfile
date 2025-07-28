@@ -1,1 +1,1 @@
-web: gunicorn portfolio.portfolio.wsgi
+web: cd portfolio && gunicorn --chdir ../ run:main
