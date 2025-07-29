@@ -891,7 +891,7 @@ function initOtherComponents() {
 }
 
 function initTerminalToggle() {
-    const terminalTrigger = document.getElementById('terminalTrigger');
+    const terminalTrigger = document.getElementById('terminal-trigger');
     if (terminalTrigger) {
         terminalTrigger.addEventListener('click', function(e) {
             e.preventDefault();
