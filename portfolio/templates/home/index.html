@@ -589,24 +589,94 @@ print(dev.say_hello())</code></pre>
         color: var(--gray-300);
     }
     
-    /* Media Queries for hero section */
-    @media (max-width: 992px) {
+    /* Enhanced Hero section responsive styles */
+    @media (max-width: 1199px) {
         .hero-content-left, 
         .hero-content-right {
             min-height: auto;
-            padding: 5rem 2rem;
+            padding: 4rem 2rem;
+        }
+        
+        .hero-title {
+            font-size: 2.75rem;
+        }
+        
+        .hero-description {
+            font-size: 1.375rem;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .hero-split {
+            flex-direction: column;
+        }
+        
+        .hero-content-left, 
+        .hero-content-right {
+            min-height: 50vh;
+            padding: 3rem 1.5rem;
         }
         
         .hero-title {
             font-size: 2.5rem;
+            text-align: center;
         }
         
         .hero-description {
             font-size: 1.25rem;
+            text-align: center;
         }
         
         .code-window {
-            margin-top: 3rem;
+            margin-top: 2rem;
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .hero-content-left, 
+        .hero-content-right {
+            min-height: auto;
+            padding: 2rem 1rem;
+        }
+        
+        .hero-title {
+            font-size: 2rem;
+            line-height: 1.2;
+        }
+        
+        .hero-description {
+            font-size: 1.125rem;
+            line-height: 1.4;
+        }
+        
+        .code-window {
+            margin-top: 1.5rem;
+            font-size: 0.875rem;
+        }
+        
+        .code-editor pre {
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .hero-content-left, 
+        .hero-content-right {
+            padding: 1.5rem 0.75rem;
+        }
+        
+        .hero-title {
+            font-size: 1.75rem;
+        }
+        
+        .hero-description {
+            font-size: 1rem;
+        }
+        
+        .code-window {
+            font-size: 0.75rem;
         }
     }
     
@@ -871,6 +941,8 @@ print(dev.say_hello())</code></pre>
     });
 </script>
 {% endblock %} 
+
+
 
 
 
