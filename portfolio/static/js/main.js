@@ -598,7 +598,13 @@ let linuxTerminal;
 let commandInput;
 let terminalOutput;
 
+// Initialize Lenis smooth scroll
+let lenis;
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Lenis
+    initLenis();
+    
     // Initialize AOS animation library
     AOS.init({
         duration: 800,
@@ -617,15 +623,58 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Don't initialize terminal automatically
-    // initLinuxTerminal();
-
     // Initialize other components
     initOtherComponents();
     
     // Add terminal toggle functionality
     initTerminalToggle();
+    
+    // Initialize smooth scroll for navigation links
+    initSmoothScrollNavigation();
 });
+
+function initLenis() {
+    lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        direction: 'vertical',
+        gestureDirection: 'vertical',
+        smooth: true,
+        mouseMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+        infinite: false,
+    });
+
+    // Listen for the scroll event and log the event data
+    lenis.on('scroll', (e) => {
+        // You can add scroll-based animations here
+    });
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+}
+
+function initSmoothScrollNavigation() {
+    // Add smooth scroll to all navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                lenis.scrollTo(target, {
+                    offset: -80, // Account for fixed navbar
+                    duration: 1.5
+                });
+            }
+        });
+    });
+}
 
 function initLinuxTerminal() {
     linuxTerminal = new LinuxTerminalFS();
@@ -842,23 +891,28 @@ function initOtherComponents() {
 }
 
 function initTerminalToggle() {
-    // Add click handler for terminal access (you can add a button or link)
-    const terminalTrigger = document.getElementById('terminal-trigger');
+    const terminalTrigger = document.getElementById('terminalTrigger');
     if (terminalTrigger) {
         terminalTrigger.addEventListener('click', function(e) {
             e.preventDefault();
-            if (!linuxTerminal) {
-                initLinuxTerminal();
-            }
-            // Show terminal section
             const terminalSection = document.getElementById('terminal-section');
-            if (terminalSection) {
-                terminalSection.scrollIntoView({ behavior: 'smooth' });
+            
+            if (terminalSection.style.display === 'none' || !terminalSection.style.display) {
+                terminalSection.style.display = 'block';
+                if (!linuxTerminal) {
+                    initLinuxTerminal();
+                }
+                // Use Lenis for smooth scroll
+                lenis.scrollTo(terminalSection, {
+                    offset: -80,
+                    duration: 1.5
+                });
+                this.textContent = 'Hide Terminal';
+            } else {
+                terminalSection.style.display = 'none';
+                this.innerHTML = '<i class="fas fa-terminal"></i> Access Terminal';
             }
         });
     }
 }
-
-
-
 
