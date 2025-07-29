@@ -623,6 +623,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Initialize terminal automatically
+    initLinuxTerminal();
+
     // Initialize other components
     initOtherComponents();
     
@@ -680,7 +683,10 @@ function initLinuxTerminal() {
     linuxTerminal = new LinuxTerminalFS();
     terminalOutput = document.getElementById('terminalOutput');
     
-    if (!terminalOutput) return;
+    if (!terminalOutput) {
+        console.error('Terminal output element not found');
+        return;
+    }
 
     // Clear terminal and show boot sequence
     clearLinuxTerminal();
@@ -731,6 +737,11 @@ function createLinuxCommandInput() {
         existingCommandLine.remove();
     }
 
+    if (!linuxTerminal) {
+        console.error('Linux terminal not initialized');
+        return;
+    }
+
     const commandLine = document.createElement('div');
     commandLine.className = 'terminal-command-line';
     commandLine.innerHTML = `
@@ -739,10 +750,14 @@ function createLinuxCommandInput() {
     `;
     
     const terminalBody = document.querySelector('.terminal-body') || terminalOutput.parentElement;
-    terminalBody.appendChild(commandLine);
-    
-    commandInput = document.getElementById('commandInput');
-    commandInput.addEventListener('keydown', handleLinuxCommandInput);
+    if (terminalBody) {
+        terminalBody.appendChild(commandLine);
+        
+        commandInput = document.getElementById('commandInput');
+        if (commandInput) {
+            commandInput.addEventListener('keydown', handleLinuxCommandInput);
+        }
+    }
 }
 
 function handleLinuxCommandInput(event) {
@@ -915,4 +930,14 @@ function initTerminalToggle() {
         });
     }
 }
+
+
+
+
+
+
+
+
+
+
 
