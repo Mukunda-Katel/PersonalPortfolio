@@ -617,11 +617,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Initialize new Linux terminal
-    initLinuxTerminal();
+    // Don't initialize terminal automatically
+    // initLinuxTerminal();
 
     // Initialize other components
     initOtherComponents();
+    
+    // Add terminal toggle functionality
+    initTerminalToggle();
 });
 
 function initLinuxTerminal() {
@@ -837,4 +840,25 @@ function initOtherComponents() {
         }
     }
 }
+
+function initTerminalToggle() {
+    // Add click handler for terminal access (you can add a button or link)
+    const terminalTrigger = document.getElementById('terminal-trigger');
+    if (terminalTrigger) {
+        terminalTrigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (!linuxTerminal) {
+                initLinuxTerminal();
+            }
+            // Show terminal section
+            const terminalSection = document.getElementById('terminal-section');
+            if (terminalSection) {
+                terminalSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+}
+
+
+
 
